@@ -25,10 +25,10 @@
     <!-- Mobile Menu -->
     <transition name="fade">
       <nav v-if="isMenuOpen" class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center space-y-6">
-        <a href="#" class="text-lg text-white hover:text-purple-400 transition">Accueil</a>
-        <a href="#" class="text-lg text-white hover:text-purple-400 transition">Fonctionnalités</a>
-        <a href="#" class="text-lg text-white hover:text-purple-400 transition">Contact</a>
-        <button @click="toggleMenu" class="mt-6 text-gray-400 hover:text-white transition">Fermer</button>
+        <NuxtLink to="/" class="hover:text-purple-400">Accueil</NuxtLink>
+        <NuxtLink to="/features" class="hover:text-purple-400">Fonctionnalités</NuxtLink>
+        <NuxtLink to="/contact" class="hover:text-purple-400">Contact</NuxtLink>
+        <button @click="toggleMenu" class="mt-6 text-gray-400 bg-gray-900 hover:text-white transition">Fermer</button>
       </nav>
     </transition>
   </header>
